@@ -9061,16 +9061,16 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '{ 𝟏 }', data = msg.sender.user_id..'/help1'}, {text = '{ 𝟐 }', data = msg.sender.user_id..'/help2'}, 
+{text = "'1'", data = msg.sender.user_id..'/help1'}, {text = "'2'", data = msg.sender.user_id..'/help2'}, 
 },
 {
-{text = '{ 𝟑 }', data = msg.sender.user_id..'/help3'}, {text = '{ 𝟒 }', data = msg.sender.user_id..'/help4'}, 
+{text = "'3'", data = msg.sender.user_id..'/help3'}, {text = "'4'", data = msg.sender.user_id..'/help4'}, 
 },
 {
 {text = '{ اوامر القفل / الفتح }', data = msg.sender.user_id..'/NoNextSeting'}, 
 },
 {
-{text = '{ 𝟓 }', data = msg.sender.user_id..'/help5'}, {text = '{ الالعاب }', data = msg.sender.user_id..'/help6'}, 
+{text = "'5'", data = msg.sender.user_id..'/help5'}, {text = '{ الالعاب }', data = msg.sender.user_id..'/help6'}, 
 },
 {
 {text = '{ اوامر التعطيل / التفعيل }', data = msg.sender.user_id..'/listallAddorrem'}, 
@@ -9081,14 +9081,12 @@ data = {
 }
 }
 return LuaTele.sendText(msg_chat_id,msg_id, [[*
-⌔︙توجد ← 5 اوامر في البوت
-ٴ•━━━━━━━━━━━━━•ٴ
-⌔︙ارسل . ‹ م1 › . ~ اوامر الحمايه
-⌔︙ارسل . ‹ م2 › . ~ اوامر الادمنيه
-⌔︙ارسل . ‹ م3 › . ~ اوامر المدراء
-⌔︙ارسل . ‹ م4 › . ~ اوامر المنشئين
-⌔︙ارسل . ‹ م5 › . ~ اوامر المطور
-ٴ•━━━━━━━━━━━━━•ٴ
+- قائمه الاوامر 
+ ٴ— — — — — — — — — — 
+- م1 ( اوامر الحمايه ) 
+- م2 ( اوامر إعدادات المجموعه ) 
+- م3 ( اوامر القفل والفتح ) 
+- م4 ( اوامر اخرى )
 *]],"md",false, false, false, false, reply_markup)
 elseif text == 'م1' then
 if not msg.Addictive then
